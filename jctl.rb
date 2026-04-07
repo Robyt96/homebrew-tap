@@ -5,21 +5,21 @@
 class Jctl < Formula
   desc "Jenkins Control Tool - CLI for Jenkins"
   homepage "https://github.com/robyt96/jctl"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Robyt96/jctl/releases/download/v0.2.0/jctl_0.2.0_darwin_amd64.tar.gz"
-      sha256 "e5229e81444d316c2fb694d560101743f1363088f60e75a110696996d969ff8f"
+      url "https://github.com/Robyt96/jctl/releases/download/v0.3.0/jctl_0.3.0_darwin_amd64.tar.gz"
+      sha256 "620b31bb7298532234e3fbf111c4bb85fa66c4037f2630f359cdd18a3682ff0b"
 
       def install
         bin.install "jctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Robyt96/jctl/releases/download/v0.2.0/jctl_0.2.0_darwin_arm64.tar.gz"
-      sha256 "d425ba629c4b8d62190b202b25a906a9acdcd03cb6863ec3d4f0c26e8cd099c8"
+      url "https://github.com/Robyt96/jctl/releases/download/v0.3.0/jctl_0.3.0_darwin_arm64.tar.gz"
+      sha256 "4f7f831560b0b6fb74bac122d8f80e9dc44161d2756174039a519a45c02f6a8a"
 
       def install
         bin.install "jctl"
@@ -29,15 +29,15 @@ class Jctl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Robyt96/jctl/releases/download/v0.2.0/jctl_0.2.0_linux_amd64.tar.gz"
-      sha256 "1303d3cfd398742e4612526d3733edc60530307bd4cce6fd598dfd80522fb364"
+      url "https://github.com/Robyt96/jctl/releases/download/v0.3.0/jctl_0.3.0_linux_amd64.tar.gz"
+      sha256 "377852b4dc9e3d0d3ab5f739aa174cd1d322d067b3a2c58f382ad7425b70d57e"
       def install
         bin.install "jctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Robyt96/jctl/releases/download/v0.2.0/jctl_0.2.0_linux_arm64.tar.gz"
-      sha256 "d81d5eff72a3c9f29d9f63a52b87c6134bf1423ab3d7c625f8c9806077e36e2b"
+      url "https://github.com/Robyt96/jctl/releases/download/v0.3.0/jctl_0.3.0_linux_arm64.tar.gz"
+      sha256 "7f18472edcb0ec255d24492444f8325d2f249fc63a48f72abff823045bdde74a"
       def install
         bin.install "jctl"
       end
